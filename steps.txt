@@ -4,5 +4,17 @@ Connect database in .env
 $ php artisan make:auth
     -   Edit user migration to include role & uuid
     -   Create a trait in App/Models/Concerns
-    -   Edit user mode
+    -   Edit user mode to use uuid
+    -   UserController with resources
 $ php artisan migrate
+
+
+Install following for Admin Panel :
+$ npm install
+$ npm install admin-lte@v3.0.0-alpha.2 --save
+$ npm install --save-dev @fortawesome/fontawesome-free
+
+And then edit following files in resources dir :
+ - js/bootstrap.js : require('admin-lte')
+ - sass/app.scss : import
+ - sass/custom.scss : Personlised css styles

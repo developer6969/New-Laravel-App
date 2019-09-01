@@ -1,0 +1,8 @@
+Debug AppServiceProvider
+Connect database in .env
+
+$ php artisan make:auth
+    -   Edit user migration to include role & uuid
+    -   Create a trait in App/Models/Concerns
+    -   Edit user mode
+$ php artisan migrate

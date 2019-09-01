@@ -11,13 +11,25 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', 'PageController@index');
+Route::get('/about', 'PageController@about');
+Route::get('/services', 'PageController@services');
+
+Route::get('/blog', 'PageController@blog');
+Route::get('/reviews', 'PageController@reviews');
+Route::get('/gallery', 'PageController@gallery');
+
+Route::get('/schedule', 'PageController@schedule');
+Route::get('/contact', 'PageController@contact');
+Route::get('/location', 'PageController@location');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
 Route::resources([
     'users' => 'UserController',

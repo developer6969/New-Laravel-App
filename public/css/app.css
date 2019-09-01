@@ -29600,7 +29600,78 @@ a.text-dark:focus {
   }
 }
 
-body {
-  background-color: red !important;
+.mp-0 {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 18px !important;
+}
+
+.d-icon {
+  font-size: 1.2rem;
+  width: 35px;
+  text-align: center;
+}
+
+.h-icon {
+  font-size: 1.5rem;
+  color: #3490dc;
+  width: 35px;
+  text-align: center;
+}
+
+.m-icon {
+  color: #3490dc;
+  width: 25px;
+  text-align: center;
+}
+
+.d-text {
+  padding-left: 2px;
+}
+
+.caps {
+  font-variant: small-caps;
+}
+
+.d-title {
+  color: white;
+  font-variant: small-caps;
+  padding-left: 4px;
+}
+
+.router-link-exact-active {
+  color: white !important;
+  background-color: #3490dc;
+}
+
+.selected-link {
+  background-color: silver;
+}
+
+.center-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -75px;
+  margin-top: -75px;
+}
+
+.hover-red:hover {
+  font-size: medium !important;
+  color: red;
+}
+
+.hover-green:hover {
+  font-size: medium !important;
+  color: limegreen;
+}
+
+.hover-gold:hover {
+  color: goldenrod;
+}
+
+.float-link {
+  color: red;
+  float: right;
 }
 
